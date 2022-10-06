@@ -341,7 +341,6 @@ p[data-value]:after {
     justify-content: space-evenly;
     border: 10px double rgb(14, 71, 150);
     width: 80%;
-    height: auto;
 }
 
 #vid {
@@ -363,6 +362,7 @@ p[data-value]:after {
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
+    height: 900px;
     background-color: white;
     border-radius: 50px;
     margin-right: 5%;
@@ -371,11 +371,15 @@ p[data-value]:after {
 #pDes2 {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-right: 5%;
     width: 100%;
-    height: 500px;
+    height: 600px;
     background-color: white;
-    border-radius: 0px 50px 50px 0px;
+    border-radius: 50px;
 }
 
 h2 {
@@ -389,6 +393,18 @@ h2 {
     margin-left: 5%;
     margin-top: 5px;
     padding: 20px;
+}
+
+#card1 {
+    height: 1000px;
+}
+
+#card2 {
+    height: 700px;
+}
+
+#textP2 {
+    width: 60%;
 }
 
 #cover {
