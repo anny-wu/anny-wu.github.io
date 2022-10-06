@@ -71,7 +71,7 @@ h1 {
     background-color: orange;
 }
 
-.active {
+.header .active {
     background-color: darkcyan;
 }
 
@@ -157,16 +157,39 @@ h1 {
     height: auto;
 }
 
+.content {
+    padding: 5%;
+}
+
 #resume h2 {
     margin-left: 20px;
     font-size: 2em;
 }
 
 .textR {
-    font-size: 30px;
     margin-left: 5%;
     margin-right: 5%;
+    font-size: 30px;
     line-height: 1.5cm;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.titleR {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.titleRP {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.titleRO {
+    margin-top: 5%;
 }
 
 #resume ul {
@@ -180,6 +203,14 @@ h1 {
     font-size: 30px;
     margin-left: 15%;
     margin-right: 5%;
+}
+
+#resume a {
+    color: black;
+}
+
+.exp {
+    margin-bottom: 1%;
 }
 
 /* Projects Section */
