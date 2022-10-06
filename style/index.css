@@ -338,15 +338,16 @@ p[data-value]:after {
     background-color: lightskyblue;
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     border: 10px double rgb(14, 71, 150);
+    width: 80%;
+    height: auto;
 }
 
 #vid {
-    position: absolute;
-    height: 700px;
-    margin-left: auto;
-    right: 5%;
-
+    width: 400px;
+    height: 500px;
+    margin-left: 10px;
 }
 
 .title {
@@ -359,10 +360,12 @@ p[data-value]:after {
     flex-direction: column;
     justify-content: space-around;
     margin-left: 5%;
-    width: 80%;
-    height: 700px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
     background-color: white;
-    border-radius: 50px 0px 0px 50px;
+    border-radius: 50px;
+    margin-right: 5%;
 }
 
 #pDes2 {
@@ -385,25 +388,11 @@ h2 {
     font-size: 25px;
     margin-left: 5%;
     margin-top: 5px;
-    width: 70%;
-}
-
-#textP1 {
-    width: 70%;
-}
-
-
-#card2 {
-    height: 800px;
-    position: relative;
-}
-
-#card1 {
-    height: 800px;
+    padding: 20px;
 }
 
 #cover {
-    height: 500px;
+    height: auto;
 }
 
 #pdf {
