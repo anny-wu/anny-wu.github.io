@@ -49,11 +49,12 @@ h1 {
 
 .header ul {
     list-style-type: none;
-
+    margin: auto;
 }
 
 .header li {
-    margin-top: 10px;
+    margin-top: 40px;
+    margin-right: 10px;
     float: left;
 }
 
@@ -63,7 +64,6 @@ h1 {
     padding: 15px 20px;
     text-decoration: none;
     border-radius: 10px;
-    margin-right: 40px;
 }
 
 .header li a:hover {
@@ -112,12 +112,18 @@ h1 {
     display: inline-block;
 }
 
+#right{
+    display: flex;
+    flex-direction: column;
+    direction:ltr;
+}
+
 #icons {
-    padding-top: 100px;
     display: flex;
     direction: rtl;
     z-index: 999;
-    margin-right:20px;
+    margin-right: 20px;
+    padding-top: 30%;
 }
 
 .social {
@@ -130,8 +136,8 @@ h1 {
 #name {
     font-size: 100px;
     margin: 0;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-bottom: 5%;
     text-transform: uppercase;
     display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
