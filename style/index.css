@@ -362,7 +362,7 @@ p[data-value]:after {
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
-    height: 900px;
+    height: 800px;
     background-color: white;
     border-radius: 50px;
     margin-right: 5%;
@@ -377,7 +377,7 @@ p[data-value]:after {
     margin-bottom: 5%;
     margin-right: 5%;
     width: 100%;
-    height: 600px;
+    height: 500px;
     background-color: white;
     border-radius: 50px;
 }
@@ -396,15 +396,15 @@ h2 {
 }
 
 #card1 {
-    height: 1000px;
+    height: 900px;
 }
 
 #card2 {
-    height: 700px;
+    height: 600px;
 }
 
 #textP2 {
-    width: 60%;
+    width: 80%;
 }
 
 #cover {
