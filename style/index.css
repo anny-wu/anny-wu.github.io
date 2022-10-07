@@ -448,7 +448,7 @@ h2 {
 
 #gallery {
     width: 80%;
-    height: 1060px;
+    height: 970px;
     margin-left: 10%;
     background-color: lightsalmon;
     border: 10px double rgb(14, 71, 150);
@@ -461,12 +461,12 @@ h2 {
 }
 
 #gallery img {
-    min-height: 780px;
+    max-height: 750px;
     width: 100%;
     display: block;
     object-fit: contain;
     justify-items: space-around;
-    margin-top: 100px;
+    padding-top: 100px;
 
 }
 
@@ -547,6 +547,6 @@ h2 {
     }
 }
 
-#space{
-    height:200px;
+#space {
+    height: 200px;
 }
