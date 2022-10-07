@@ -367,18 +367,9 @@ p[data-value]:after {
     background-color: lightskyblue;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     border: 10px double rgb(14, 71, 150);
     width: 80%;
-}
-
-#vid {
-    width: 400px;
-    height: 500px;
-    margin-left: 10px;
-    margin-right: 15px;
-    position: relative;
-    z-index: 0;
 }
 
 .title {
@@ -455,13 +446,14 @@ h2 {
     margin-left: 10%;
     background-color: lightsalmon;
     border: 10px double rgb(14, 71, 150);
+    position:relative;
+    z-index:-1;
 }
 
 .slideshow-container {
     max-width: 70%;
     position: relative;
     margin: auto;
-    z-index: 0;
 }
 
 #gallery img {
