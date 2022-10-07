@@ -372,6 +372,10 @@ p[data-value]:after {
     width: 80%;
 }
 
+#vid{
+    margin-right:10%;
+}
+
 .title {
     font-size: 50px;
     margin-left: 5%;
