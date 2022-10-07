@@ -28,6 +28,14 @@ function chooseTab() {
       $("#a").removeClass("active");
     }
   });
+
+  $(".dropdown-content").click(function () {
+    if (!$(this).hasClass("active")) {
+      $("#r").addClass("active");
+      $("#a").removeClass("active");
+      $("#p").removeClass("active");
+    }
+  });
 }
 
 //Set active tab when scrolling through the web
@@ -36,21 +44,26 @@ function scrollHandle(){
         var Scroll = $(window).scrollTop(), 
           SectionOneOffset = $("#about").offset().top - 300,
           SectionTwoOffset = $("#resume").offset().top - 300,
-          SectionThreeOffset = $("#projects").offset().top - 300; 
+          SectionThreeOffset = $("#projects").offset().top - 320; 
 
         if (Scroll >= SectionOneOffset && Scroll < SectionTwoOffset) {
-          $("#a").addClass("active");
-          $("#r").removeClass("active");
-          $("#p").removeClass("active");
-        }
-        else if (Scroll >= SectionTwoOffset && Scroll < SectionThreeOffset) {
-          $("#r").addClass("active");
-          $("#a").removeClass("active");
-          $("#p").removeClass("active");
+          if (!$("#a").hasClass("active")) {
+            $("#a").addClass("active");
+            $("#r").removeClass("active");
+            $("#p").removeClass("active");
+          }
+        } else if (Scroll >= SectionTwoOffset && Scroll < SectionThreeOffset) {
+          if (!$("#r").hasClass("active")) {
+            $("#r").addClass("active");
+            $("#a").removeClass("active");
+            $("#p").removeClass("active");
+          }
         } else if (Scroll >= SectionThreeOffset) {
-          $("#p").addClass("active");
-          $("#r").removeClass("active");
-          $("#a").removeClass("active");
+          if (!$("#p").hasClass("active")) {
+            $("#p").addClass("active");
+            $("#r").removeClass("active");
+            $("#a").removeClass("active");
+          }
         }
 
       });

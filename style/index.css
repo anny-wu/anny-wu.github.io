@@ -9,7 +9,6 @@ h2 {
 
 /* Website Header */
 .header {
-    overflow: hidden;
     background-color: #fff;
     position: sticky;
     display: flex;
@@ -64,7 +63,7 @@ h1 {
     padding: 15px 20px;
     text-decoration: none;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 
 .header li a:hover {
@@ -73,6 +72,36 @@ h1 {
 
 .header .active {
     background-color: darkcyan;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    color:white;
+    background: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: transparent;
+    top: 100%;
+    padding: 20px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 #logo {
