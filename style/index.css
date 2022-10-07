@@ -372,8 +372,9 @@ p[data-value]:after {
     width: 80%;
 }
 
-#vid{
-    margin-right:10%;
+#vid {
+    right: 50px;
+    position: relative;
 }
 
 .title {
@@ -450,8 +451,8 @@ h2 {
     margin-left: 10%;
     background-color: lightsalmon;
     border: 10px double rgb(14, 71, 150);
-    position:relative;
-    z-index:-1;
+    position: relative;
+    z-index: -1;
 }
 
 .slideshow-container {
