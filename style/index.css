@@ -452,7 +452,7 @@ h2 {
     background-color: lightsalmon;
     border: 10px double rgb(14, 71, 150);
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .slideshow-container {
