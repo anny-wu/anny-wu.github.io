@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anny's Personal Website</title>
+    <meta name="description" content="Portfolio for Anny Wu">
+    <meta name="keywords" content="Anny Wu, annyw, Yu Wu, portfolio, resume">
+    <meta name="author" content="Yu (Anny) Wu">
+    <title>Anny Wu's Portfolio</title>
     
     <!-- JS -->
     <script src='scripts/jquery.min.js'></script>
@@ -15,75 +18,80 @@
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
+ <!-- Header -->
 <div class="header">
-    <div><img id="logo" src="src/Logo.png">
-    <p id="name"> Yu (Anny) Wu</p></div>
+    <div>
+        <img id="logo" src="src/Logo.png" alt="initials logo">
+        <p id="name"> Yu (Anny) Wu</p>
+    </div>
     <div>
         <div id="icons">
-            <a href="https://www.linkedin.com/in/yuwu5800/"><img class="social" src="src/ln.png"></a>
-            <a href="https://github.com/anny-wu"><img class="social" src="src/github.png"></a>
-            <a href=https://www.youtube.com/channel/UC6lyqzmD_FhERrMLSFAZMxg/videos><img class="social" src="src/youtube.png"></a>
+            <a href="https://www.linkedin.com/in/yuwu5800/"><img class="social" src="src/ln.png" alt="linkedln logo"></a>
+            <a href="https://github.com/anny-wu"><img class="social" src="src/github.png" alt="github logo"></a>
+            <a href=https://www.youtube.com/channel/UC6lyqzmD_FhERrMLSFAZMxg/videos><img class="social" src="src/youtube.png" alt="youtube logo"></a>
         </div>
-    <ul class="nav">
-        <li><a id="a" class="active" href="#about">About Me</a></li>
-        <li><a id="r" href="#resume">Resume</a></li>
-        <li><a id="p" href="#projects">Projects</a></li>
-    </ul>
+        <ul class="nav">
+            <li><a id="a" class="active" href="#about">About Me</a></li>
+            <li><a id="r" href="#resume">Resume</a></li>
+            <li><a id="p" href="#projects">Projects</a></li>
+        </ul>
     </div>
 </div>
+
+<!-- About -->
 <section id="about">
     <h1 id="me">About Me</h1>
     <div id="container">
-    <div id="pic">
-    <div class="circle">
-        <img id="profile" src="src/Profile.png">
+        <div id="pic">
+            <div class="circle">
+                <img id="profile" src="src/Profile.png" alt="profile picture of Anny">
+            </div>
+        </div>
+        <div id="textA">
+            <p id="description">I am a junior at the University of Michigan intending to study Computer Science at the College of Engineering, and I am
+            passionate about languages starting at a young age. Although the definition of the word "languages" was narrow for me at
+            the beginning as I only think about spoken languages, this definition continued to grow and eventually became a part of
+            everything I encountered. From a stripe of color on a piece of artwork to a line of code on the screen of a computer,
+            something has been communicated through the power of languages. Therefore, I wanted to find a place in the computer
+            software industry where art, computer, and spoken languages meet.</p>
+        </div>
     </div>
-    </div>
-    <div id="textA">
-        <p id="description">I am a junior at the University of Michigan intending to study Computer Science at the College of Engineering, and I am
-        passionate about languages starting at a young age. Although the definition of the word "languages" was narrow for me at
-        the beginning as I only think about spoken languages, this definition continued to grow and eventually became a part of
-        everything I encountered. From a stripe of color on a piece of artwork to a line of code on the screen of a computer,
-        something has been communicated through the power of languages. Therefore, I wanted to find a place in the computer
-        software industry where art, computer, and spoken languages meet.</p>
-    </div>
-    </div>
-
 </section> 
 
-
+<!-- Resume -->
 <section id="resume">
     <div>
         <h1>Resume</h1>
         <div class="sectionC">
             <div class="content">
-            <h2>Education</h2>
-            <div class="titleRP">
-            <p class="textR"><strong>University of Michigan (Ann Arbor, MI)</strong>
-            <p class="textR"><strong>Aug 2021 - Dec 2023<br></strong></p>
-            </div>
-            <p class="textR">
-            <strong>GPA:</strong> 3.936/4.00 <br>
-            <strong>Major:</strong> Computer Science B.S.E. <br>            
-            <strong>Relevant Coursework:<br></strong>
-            </p>
-            <div class="courses"><ul>
-                <li>Accelerated Introduction to Computers and Programming</li>
-                <li>Practical Data Science for Engineers</li> 
-                <li>Programming and Introductory Data Structures</li>
-                <li>Data Structures and Algorithms</li>
-                <li>Introduction to Computer Organization</li>
-                <li>Foundations of Computer Science</li>
-                <li>Introduction to Artificial Intelligence</li>
-                <li>User Interface Development</li>
-                <li>Human-Centered Software Design and Development</li>
-                <li>Probability and Statistics for Engineers</li>
-                <li>Entrepreneurship Hour</li>
-            </ul>
-            </div>
-            <p class="textR"><strong>Honors:</strong> University Honors, Dean’s List</p>
+                <h2>Education</h2>
+                <div class="titleRP">
+                    <p class="textR"><strong>University of Michigan (Ann Arbor, MI)</strong></p>
+                    <p class="textR"><strong>Aug 2021 - Dec 2023<br></strong></p>
+                </div>
+                <p class="textR">
+                    <strong>GPA:</strong> 3.936/4.00 <br>
+                    <strong>Major:</strong> Computer Science B.S.E. <br>            
+                    <strong>Relevant Coursework:<br></strong>
+                </p>
+                <div class="courses">
+                    <ul>
+                        <li>Accelerated Introduction to Computers and Programming</li>
+                        <li>Practical Data Science for Engineers</li> 
+                        <li>Programming and Introductory Data Structures</li>
+                        <li>Data Structures and Algorithms</li>
+                        <li>Introduction to Computer Organization</li>
+                        <li>Foundations of Computer Science</li>
+                        <li>Introduction to Artificial Intelligence</li>
+                        <li>User Interface Development</li>
+                        <li>Human-Centered Software Design and Development</li>
+                        <li>Probability and Statistics for Engineers</li>
+                        <li>Entrepreneurship Hour</li>
+                    </ul>
+                </div>
+                <p class="textR"><strong>Honors:</strong> University Honors, Dean’s List</p>
             </div>
         </div>
         
@@ -95,13 +103,12 @@
                 <p class="textR"><strong>Ann Arbor, MI</strong></p>
             </div>
             <div class="exp">
-            <div class="titleR">
-            <p class="textR"> <em>Michigan Hackers - Machine Learning Team and Quant Team</em></p>
-            <p class="textR"><em>Aug 2021 - Present</em><br>
-            </div>
-            <p class="textR">Experiment with different combinations of numbers for reward to apply concepts of reinforcement learning (Q-learning)
-            to
-            build a Minesweeper AI using Python that is capable of solving the minesweeper game alone</p>
+                <div class="titleR">
+                    <p class="textR"> <em>Michigan Hackers - Machine Learning Team and Quant Team</em></p>
+                     <p class="textR"><em>August 2021 - Present</em><br>
+                </div>
+                <p class="textR">--- Experiment with different combinations of numbers for reward to apply concepts of reinforcement learning (Q-learning)
+                to build a Minesweeper AI using Python that is capable of solving the minesweeper game alone</p>
             </div>
             <div class="exp">
                 <div class="titleR">
@@ -109,9 +116,8 @@
                     <p class="textR"><em>July 2022 - August 2022</em><br>
                 </div>
                 <p class="textR">                   
-                    Offered personalized assistance for over 1,500 participants involved in the National Training Institute by providing
-                    events assistance and directional support to meet the academic and entertainment needs
-                </p>
+                    --- Offered personalized assistance for over 1,500 participants involved in the National Training Institute by providing
+                    events assistance and directional support to meet the academic and entertainment needs</p>
             </div>
             <div class="exp">
                 <div class="titleR">
@@ -119,34 +125,87 @@
                     <p class="textR"><em>March 2022 - June 2022</em><br>
                 </div>
                 <p class="textR">
-                    Assisted in the data preparation for the natural language processing research here at the School of Information and identified the appropriate social contexts in which a sentence could be said  
-                </p>
+                    --- Assisted in the data preparation for the natural language processing research here at the School of Information and identified the appropriate social contexts in which a sentence could be said  </p>
             </div>
             <div class="exp">
                 <div class="titleR">
                     <p class="textR"> <em>Tech Innovation Jam</em></p>
-                    <p class="textR"><em>Oct 2021 - Nov 2021</em><br>
+                    <p class="textR"><em>October 2021 - November 2021</em><br>
                 </div>
                 <p class="textR">
-                    Built a low-fi prototype for a project matching application in a 4-week competition by defining problem statement,
+                    --- Built a low-fi prototype for a project matching application in a 4-week competition by defining problem statement,
                     gathering
-                    user interviews, designing end users personas, and producing wireframe images<br>
-                    <a href="https://drive.google.com/file/d/1CPFa0bomBXbVPfPivyW6AA7usXcJVqel/view?usp=sharing">(link to pitch deck)</a>
+                    user interviews, designing end users personas, and producing wireframe images
+                    <a href="https://drive.google.com/file/d/1CPFa0bomBXbVPfPivyW6AA7usXcJVqel/view?usp=sharing"> (link to pitch deck)</a>
                 </p>
             </div>
             <div class="titleRP">
-                <p class="textR"> <strong>University of Michigan</strong></p>
-                <p class="textR"><strong>Ann Arbor, MI</strong></p>
+                <p class="textR"> <strong>Keith Global</strong></p>
+                <p class="textR"><strong>Union City, CA</strong></p>
             </div>
             <div class="exp">
                 <div class="titleR">
-                    <p class="textR"> <em>Michigan Hackers - Machine Learning Team and Quant Team</em></p>
-                    <p class="textR"><em>Aug 2021 - Present</em><br>
+                    <p class="textR"> <em>Graphic Designer</em></p>
+                    <p class="textR"><em>May 2021 - August 2021</em><br>
                 </div>
-                <p class="textR">Experiment with different combinations of numbers for reward to apply concepts of reinforcement
-                    learning (Q-learning)
-                    to
-                    build a Minesweeper AI using Python that is capable of solving the minesweeper game alone</p>
+                <p class="textR">--- Drew out eight designs for the cover of a book and provided three options for internal layout that highlight different
+                stages of life for a personal narrative</p>
+            </div>
+            <div class="titleRP">
+                <p class="textR"> <strong>Holland Christian High School</strong></p>
+                <p class="textR"><strong>Holland, MI</strong></p>
+            </div>
+            <div class="exp">
+                <div class="titleR">
+                    <p class="textR"> <em>Math Club Founder / Curriculum Developer</em></p>
+                    <p class="textR"><em>August 2018 - May 2021</em><br>
+                </div>
+                <p class="textR">--- Developed in-person and virtual tutoring sessions after school to help five students get a 5 on their AP Calculus BC
+                Exam</p>
+            </div>
+            <div class="exp">
+                <div class="titleR">
+                    <p class="textR"> <em>Dance Marathon - Entertainment Committee Co-lead</em></p>
+                    <p class="textR"><em>Aug 2020 - May 2021</em><br>
+                </div>
+                <p class="textR">
+                --- Oversaw the Entertainment Committee to create the first virtual Dance Marathon by introducing activities like cooking
+                and dancing competitions in the agenda and contributed to $7,166.34 raised for Helen DeVos Children’s Hospital
+                </p>
+            </div>
+            <div class="exp">
+                <div class="titleR">
+                    <p class="textR"> <em>DEI Task Force - Retaining Individuals from Diverse Backgrounds Team</em></p>
+                    <p class="textR"><em>Aug 2020 - May 2021</em><br>
+                </div>
+                <p class="textR">
+                    ---Identified 10 aspects of school policies that contributed to the loss of individuals from diverse backgrounds
+                </p>
+                <p class="textR">
+                    ---Purposed to partner with the local Cultural Intelligence Center to provide essential resources to employees and students
+                </p>
+            </div>
+            <div class="exp">
+                <div class="titleR">
+                    <p class="textR"> <em>Teacher Assistant</em></p>
+                    <p class="textR"><em>Jan 2021 - May 2021</em><br>
+                </div>
+                <p class="textR">
+                    --- Instructed a Chinese societal practices class by introducing freshman Mandarin Immersion students to practical and
+                    popular topics in China (food, attractions, internet slangs, etc.) that serve as the foundation of future curriculum
+                </p>
+            </div>
+            <div class="titleRP">
+                <p class="textR"> <strong>Careerline Tech Center</strong></p>
+                <p class="textR"><strong>Holland, MI</strong></p>
+            </div>
+            <div class="exp">
+                <div class="titleR">
+                    <p class="textR"> <em>Future Prep'd Academy</em></p>
+                    <p class="textR"><em>January 2021 - March 2019</em><br>
+                </div>
+                <p class="textR">--- Developed a new exhibition layout to increase the exposure of the current exhibit for the Holland Museum</p>
+                <p class="textR">--- Collaborated with Trans-Matic to reduce the waste of safety products and raise awareness of safety practices</p>
             </div>
         </div>
         </div>
