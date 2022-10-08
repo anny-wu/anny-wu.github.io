@@ -112,10 +112,10 @@ h1 {
     display: inline-block;
 }
 
-#right{
+#right {
     display: flex;
     flex-direction: column;
-    direction:ltr;
+    direction: ltr;
 }
 
 #icons {
@@ -148,36 +148,32 @@ h1 {
     margin-left: 10%;
     margin-right: 10%;
     background-color: lightskyblue;
-    height: 800px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     border: 10px double rgb(14, 71, 150);
 }
 
-#pic {
-    width: 20%;
-    float: left;
-}
-
 .circle {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     overflow: hidden;
     border-radius: 50%;
-
+    margin-top:10%;
 }
 
 #profile {
-    width: 300px;
+    width: 400px;
     z-index: -1;
     overflow: auto;
 }
 
 #textA {
-    margin: 0;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 0;
-    width: 60%;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5cm;
