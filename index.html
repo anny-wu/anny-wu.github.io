@@ -24,6 +24,8 @@
 <div class="header">
     <div>
         <img id="logo" src="src/Logo.png" alt="initials logo">
+    </div>
+    <div>
         <p id="name"> Yu (Anny) Wu</p>
     </div>
     <div id="right">
@@ -33,18 +35,9 @@
             <a href=https://www.youtube.com/channel/UC6lyqzmD_FhERrMLSFAZMxg/videos><img class="social" src="src/youtube.png" alt="jump to Youtube"></a>
         </div>
         <div>
-        <ul>
-            <li><a id="a" class="active nav" href="#about">About Me</a></li>
-            <li>
-                <div class="dropdown">
-                    <a  id="r" href="#resume"><button  class="dropbtn nav"> Resume</button></a>
-                    <div class="dropdown-content">
-                        <a href="#experience">Experience</a>
-                        <a href="#org">Organizations</a>
-                        <a href="#skills">Skills</a>
-                    </div>
-                </div>
-            </li>
+        <ul class="nav">
+            <li><a id="a" class="active" href="#about">About Me</a></li>
+            <li><a  id="r" class="nav" href="#resume">Resume</a></li>
             <li><a id="p" class="nav" href="#projects">Projects</a></li>
             <li><a id="g" class="nav" href="#slideshow">Photography</a></li>
         </ul>
@@ -62,12 +55,8 @@
             </div>
         </div>
         <div id="textA">
-            <p id="description">I am a junior at the University of Michigan intending to study Computer Science at the College of Engineering, and I am
-            passionate about languages starting at a young age. Although the definition of the word "languages" was narrow for me at
-            the beginning as I only think about spoken languages, this definition continued to grow and eventually became a part of
-            everything I encountered. From a stripe of color on a piece of artwork to a line of code on the screen of a computer,
-            something has been communicated through the power of languages. Therefore, I wanted to find a place in the computer
-            software industry where art, computer, and spoken languages meet.</p>
+            <p id="description">I am a junior at the University of Michigan studying <strong>Computer Science</strong> at the College of Engineering, and I am on track to graduate with a Bachelor of Science in Engineering Degree (B.S.E.) in December 2023. I am passionate about <strong>software development</strong> and <strong>machine learning</strong> and have tackled on various projects in related topics. I love to pay special attention to numbers, and I once memorized 200 digits of pi for fun.
+       </p>
         </div>
     </div>
 </section> 
@@ -347,11 +336,11 @@
                 achieved over 90% accuracy in predicting a patient’s diagnosis based on a list of symptoms. </p>
             </div>
             <div id="pdf">
-                <iframe src="https://drive.google.com/file/d/1Q-NL5HzsW5xYQ3CPbfQswvGpuSUTqQdR/preview" width= 400" height="730" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1Q-NL5HzsW5xYQ3CPbfQswvGpuSUTqQdR/preview" width= "400" height="520" allow="autoplay"></iframe>
             </div>
         </div>
         <div class="pCard" id="card2">
-            <div id="pDes2">
+            <div id="pDes1">
                 <h2 class="title"> GeoQuiz <br> (Java, XML)</h2>
                 <p class="textP" id="textP2">I implemented a trivia application using Android Studio that allows users to
                     respond to a statement. It provides the user three opportunities to "cheat," and it will calculate the score
@@ -359,9 +348,22 @@
                     orientation of the phone and is adaptable with different screen size. </p>
             </div>
             <div>
-                <iframe id="vid" src="src/Geoquiz Demo.mp4" type="video/mp4" width="400" height="580" frameborder="0"
-                    allow="autoplay; fullscreen">
-                </iframe>
+                <video id="vid" autoplay>
+                    <source src="src/Geoquiz Demo.mp4" type="video/mp4">
+                    <source src="src/Geoquiz Demo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        <div class="pCard" id="card3">
+            <div id="pDes1">
+                <h2 class="title"> Construct (Swift)</h2>
+                <p class="textP" id="textP1">I am working on developing this application to facilitate the communication between construction workers. Our team identified that they have been using iMessages for all communication tasks and were often confused because of the amount of information they receive. Therefore, we target smaller, local construction businesses that could benefit from an
+                application that creates a single source of information for their employees on their projects and improves project
+                visibility.</p>
+            </div>
+            <div>
+                <img id="construct" src="src/Figma.png" alt="Figma prototype of construction app displaying homescreen, schedule, and project page">
             </div>
         </div>
     </div>
@@ -376,32 +378,32 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
                 <div class="numbertext">1 / 5</div>
-                <img src="src/1.JPG">
+                <img src="src/1.JPG" alt="geese walking along Lake Michigan">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">2 / 5</div>
-                <img src="src/2.jpg">
+                <img src="src/2.jpg" alt="Seattle skyline">
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">3 / 5</div>
                 <div id="containerI">
-                <img src="src/3.JPG">
+                <img src="src/3.JPG" alt="Chicago skyline from Navy Pier">
                 </div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">4 / 5</div>
                 <div id="containerI">
-                    <img src="src/4.JPG">
+                    <img src="src/4.JPG" alt="Chicago Union Station">
                 </div>
             </div>
 
             <div class="mySlides fade">
                 <div class="numbertext">5 / 5</div>
                 <div id="containerI">
-                    <img src="src/5.jpg">
+                    <img src="src/5.jpg" alt="sunset on the Pacific Ocean">
                 </div>
             </div>
 

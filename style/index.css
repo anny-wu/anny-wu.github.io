@@ -1,9 +1,12 @@
 [id] {
-    scroll-margin-top: 300px;
+    scroll-margin-top: 150px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h2 {
-    font-family: fantasy;
     margin-bottom: 5px;
 }
 
@@ -13,15 +16,15 @@ h2 {
     position: sticky;
     display: flex;
     top: 0;
-    width: 100%;
-    justify-content: space-evenly;
+    width: 101%;
     z-index: 999;
+    align-items: center;
 }
 
 .header:before {
     content: '';
     width: 100%;
-    height: 15px;
+    height: 5px;
     position: absolute;
     top: 0;
     left: 0;
@@ -32,7 +35,7 @@ h2 {
 .header:after {
     content: '';
     width: 100%;
-    height: 15px;
+    height: 5px;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -41,8 +44,6 @@ h2 {
 }
 
 h1 {
-    margin-top: 5%;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3em;
     text-align: center;
 }
@@ -53,8 +54,9 @@ h1 {
 }
 
 .header li {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-right: 10px;
+    margin-bottom: 20px;
     float: left;
 }
 
@@ -74,40 +76,9 @@ h1 {
     background-color: darkcyan;
 }
 
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    color: white;
-    background: transparent;
-}
-
-.dropdown-content {
-    display: none;
-    background-color: transparent;
-    top: 100%;
-    padding: 20px;
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    margin-top: 10px;
-}
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 #logo {
-    height: 150px;
+    height: 50px;
     width: auto;
-    margin-top: 30px;
     margin-left: 20px;
     display: inline-block;
 }
@@ -116,6 +87,8 @@ h1 {
     display: flex;
     flex-direction: column;
     direction: ltr;
+    width: 100%;
+    align-items: flex-end;
 }
 
 #icons {
@@ -123,7 +96,6 @@ h1 {
     direction: rtl;
     z-index: 999;
     margin-right: 20px;
-    padding-top: 30%;
 }
 
 .social {
@@ -134,45 +106,46 @@ h1 {
 }
 
 #name {
-    font-size: 100px;
-    margin: 0;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    font-size: 50px;
+    margin: 5%;
+    width: 500px;
     text-transform: uppercase;
-    display: inline-block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* About Me */
 #container {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
     background-color: lightskyblue;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     border: 10px double rgb(14, 71, 150);
 }
 
+#pic {
+    margin: 3%;
+}
+
+
 .circle {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     overflow: hidden;
     border-radius: 50%;
-    margin-top:10%;
+    margin-top: 10%;
 }
 
 #profile {
-    width: 400px;
+    width: 300px;
     z-index: -1;
     overflow: auto;
 }
 
 #textA {
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 2%;
+    margin-right: 5%;
     padding: 0;
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -181,8 +154,7 @@ h1 {
 
 /* Resume Section */
 .sectionC {
-    margin-left: 10%;
-    margin-right: 10%;
+    width: 100%;
     margin-bottom: 1%;
     background-color: lightsalmon;
     border: 10px double rgb(14, 71, 150);
@@ -201,7 +173,7 @@ h1 {
 .textR {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5cm;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -232,7 +204,7 @@ h1 {
 }
 
 .courses li {
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 15%;
     margin-right: 5%;
 }
@@ -312,7 +284,7 @@ progress[value]::-moz-progress-bar {
 p[data-value]:after {
     content: attr(data-value) '%';
     float: right;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .skill::-webkit-progress-value {
@@ -342,7 +314,7 @@ p[data-value]:after {
 }
 
 .skillT {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .skills {
@@ -366,18 +338,13 @@ p[data-value]:after {
 /* Projects Section */
 .pCard {
     z-index: -1;
-    margin: 3% 10% 3% 10%;
+    margin-bottom: 1%;
     background-color: lightskyblue;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border: 10px double rgb(14, 71, 150);
-    width: 80%;
-}
-
-#vid {
-    right: 50px;
-    position: relative;
+    width: 100%;
 }
 
 .title {
@@ -393,65 +360,44 @@ p[data-value]:after {
     margin-top: 5%;
     margin-bottom: 5%;
     width: 100%;
-    height: 800px;
     background-color: white;
     border-radius: 50px;
     margin-right: 5%;
-}
-
-#pDes2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    width: 100%;
-    height: 550px;
-    background-color: white;
-    border-radius: 50px;
 }
 
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-bottom: 5px;
 }
 
 .textP {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
-    margin-left: 5%;
     margin-top: 5px;
     padding: 20px;
-}
-
-#card1 {
-    height: 900px;
-}
-
-#card2 {
-    height: 650px;
-}
-
-#textP2 {
     width: 80%;
+    margin: auto;
 }
 
-#cover {
-    height: auto;
-}
 
 #pdf {
     padding-right: 5%;
 }
 
+#vid {
+    width: 400px;
+    height: 400px;
+}
+
+#construct {
+    position: relative;
+    right: 5%;
+    height: 400px;
+}
+
+
 /* Gallery Section */
 
 #gallery {
-    width: 80%;
-    height: 970px;
-    margin-left: 10%;
+    width: 100%;
     background-color: lightsalmon;
     border: 10px double rgb(14, 71, 150);
     position: relative;
@@ -465,10 +411,10 @@ h2 {
 }
 
 #gallery img {
-    max-height: 750px;
+    max-height: 600px;
     width: 100%;
     display: block;
-    object-fit: contain;
+    object-fit: cover;
     justify-items: space-around;
     padding-top: 100px;
 
@@ -509,7 +455,7 @@ h2 {
     font-size: 30px;
     padding: 8px 12px;
     position: absolute;
-    top: 20px;
+    top: 40px;
 }
 
 #containerD {
