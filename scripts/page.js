@@ -30,14 +30,6 @@ function scrollHandle(){
             $("#p").removeClass("active");
             $("#g").removeClass("active");
             $("#top").css("display", "block");
-           if (
-             document.body.scrollTop > 20 ||
-             document.documentElement.scrollTop > 20
-           ) {
-             mybutton.style.display = "block";
-           } else {
-             mybutton.style.display = "none";
-           }
         } else if (Scroll >= SectionThreeOffset && Scroll < SectionFourOffset) {
             $("#p").addClass("active");
             $("#r").removeClass("active");
