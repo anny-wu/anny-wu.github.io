@@ -2,6 +2,7 @@ let slideIndex = 1;
 
 $(document).ready(function () {
   scrollHandle();
+  backTop();
   showSlides(slideIndex);
 
   $("#prev").click(plusSlides(-1));
@@ -22,22 +23,34 @@ function scrollHandle(){
             $("#r").removeClass("active");
             $("#p").removeClass("active");
             $("#g").removeClass("active");
+            $("#top").css("display", "none");
         } else if (Scroll >= SectionTwoOffset && Scroll < SectionThreeOffset) {
             $("#r").addClass("active");
             $("#a").removeClass("active");
             $("#p").removeClass("active");
             $("#g").removeClass("active");
+            $("#top").css("display", "block");
+           if (
+             document.body.scrollTop > 20 ||
+             document.documentElement.scrollTop > 20
+           ) {
+             mybutton.style.display = "block";
+           } else {
+             mybutton.style.display = "none";
+           }
         } else if (Scroll >= SectionThreeOffset && Scroll < SectionFourOffset) {
             $("#p").addClass("active");
             $("#r").removeClass("active");
             $("#a").removeClass("active");
             $("#g").removeClass("active");
+            $("#top").css("display", "block");
         }
         else {
             $("#g").addClass("active");
             $("#r").removeClass("active");
             $("#a").removeClass("active");
             $("#p").removeClass("active");
+            $("#top").css("display", "block");
         }
 
       });
@@ -75,4 +88,12 @@ function showSlides(n) {
 
   $(slides[slideIndex - 1]).css("display", "block");
   $(dots[slideIndex - 1]).addClass(" active");
+}
+
+//Navigate back to the top of the page
+function backTop() {
+  $("#top").click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
 }

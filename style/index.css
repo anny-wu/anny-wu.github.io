@@ -2,7 +2,7 @@
     scroll-margin-top: 150px;
 }
 
-body {
+body h1 h2 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -12,11 +12,11 @@ h2 {
 
 /* Website Header */
 .header {
-    background-color: #fff;
+    background-color: rgb(254, 236, 229);
     position: sticky;
     display: flex;
     top: 0;
-    width: 101%;
+    width: 105%;
     z-index: 999;
     align-items: center;
 }
@@ -46,6 +46,7 @@ h2 {
 h1 {
     font-size: 3em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .header ul {
@@ -88,6 +89,7 @@ h1 {
     flex-direction: column;
     direction: ltr;
     width: 100%;
+    margin-right: 5%;
     align-items: flex-end;
 }
 
@@ -110,7 +112,6 @@ h1 {
     margin: 5%;
     width: 500px;
     text-transform: uppercase;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* About Me */
@@ -497,6 +498,110 @@ h2 {
     }
 }
 
-#space {
-    height: 200px;
+/* Form Section */
+.form {
+    float: right;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+#contactC {
+    z-index: -1;
+    margin-bottom: 1%;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 10px double rgb(14, 71, 150);
+    width: 100%;
+}
+
+.fields {
+    display: flex;
+    width: 100%;
+}
+
+.fields .field {
+    width: 80%;
+}
+
+.field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.textarea textarea {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.name {
+    margin-right: 40px;
+}
+
+.email {
+    margin-left: 40px;
+}
+
+.field input,
+.textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 3px solid rgb(18, 35, 192);
+    border-radius: 10px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+
+
+form button {
+    height: 100%;
+    background-color: rgb(18, 35, 192);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: auto;
+}
+
+form button:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
+#submit {
+    display: flex;
+    align-items: center;
+}
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 3px;
+    font-size: 20px;
+    width: 100%;
+    border: 3px solid rgb(18, 35, 192);
+    background-color: rgb(254, 236, 229);
+}
+
+footer a {
+    color: black;
+}
+
+#top {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    width:60px;
+
 }
