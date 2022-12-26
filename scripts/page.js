@@ -8,7 +8,6 @@ $(document).ready(function () {
 
   $("#prev").click(plusSlides(-1));
   $("#next").click(plusSlides(1));
-  $("#icon").click(navBar);
 });
 
 //Set active tab when scrolling through the web
@@ -88,26 +87,4 @@ function backTop() {
   $("#backtop").click(function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-}
-
-//Change navigation bar style according to the window size
-function navBar(){
-  /*var nav = $(".nav");
-  nav.each(function () {
-    if (!$(this).hasClass("icon")) {
-      console.log($(this));
-      if ($(this).hasClass(" responsive")) {
-        $(this).removeClass(" responsive");
-        console.log("True");
-      } else {
-        $(this).addClass(" responsive");
-      }
-  }
-  });*/
-    var x = document.getElementById("navB");
-    if (x.className === "nav") {
-      x.className += " responsive";
-    } else {
-      x.className = "nav";
-    }
 }

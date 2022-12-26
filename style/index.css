@@ -6,175 +6,65 @@ body h1 h2 p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h2 {
-    margin-bottom: 5px;
+h1 {
+    font-size: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2vh !important;
 }
 
 /* Website Header */
-.header {
+.navbar {
     background-color: rgb(254, 236, 229);
-    position: sticky;
-    display: flex;
-    top: 0;
-    width: 105%;
-    z-index: 999;
-    align-items: center;
-
+    border-bottom: 2px solid rgb(14, 71, 150);
 }
 
-.header:before {
-    content: '';
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgb(14, 71, 150);
-    border-radius: 5px;
+.navbar-brand {
+    font-size: 2rem !important;
 }
 
-.header:after {
-    content: '';
-    width: 100%;
-    height: 5px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgb(14, 71, 150);
-    border-radius: 5px;
+.nav-link {
+    font-size: 1.5rem !important;
 }
 
-h1 {
-    font-size: 3em;
-    text-align: center;
-    text-transform: uppercase;
+.nav-item .active {
+    font-weight: bold;
 }
 
-.nav {
-    overflow: hidden;
-}
-
-.header .nav a {
-    background-color: rgb(14, 71, 150);
-    color: white;
-    padding: 15px 20px;
-    text-decoration: none;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
-    margin-bottom: 20px;
-    float: left;
-    display: block;
-}
-
-.header .nav a:hover {
-    background-color: lightsalmon;
-}
-
-.header .nav .active {
-    background-color: darkcyan;
+.navbar-toggler {
+    margin-right: 20px;
 }
 
 #logo {
-    height: 50px;
+    height: 40px;
     width: auto;
     margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     display: inline-block;
-}
-
-#right {
-    display: flex;
-    flex-direction: column;
-    direction: ltr;
-    width: 100%;
-    align-items: flex-end;
-    margin-right: 5%;
-}
-
-#icon {
-    display: none;
-    float: right;
-
-}
-
-@media screen and (max-width: 800px) {
-    #logo {
-        margin-top: 20px;
-    }
-
-    .header {
-        padding: auto;
-    }
-
-    #name {
-        font-size: 10px;
-        margin: 5%;
-        width: 10%;
-        text-transform: uppercase;
-    }
-
-    #icons {
-        display: flex;
-        flex-direction: ltr;
-    }
-
-    #right {
-        margin-right: 5%;
-    }
-
-    .header .nav a {
-        display: none;
-    }
-
-    .header .nav a#icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .nav.responsive {
-        position: relative;
-
-    }
-
-    .nav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .nav.responsive a {
-        margin-bottom: 10px;
-        text-align: left;
-        display: block;
-        float: none;
-    }
-}
-
-#icons {
-    display: flex;
-    direction: rtl;
-    z-index: 999;
-    margin-top: 10px;
-    margin-right: 20px;
 }
 
 .social {
     height: 30px;
     width: 30px;
     z-index: 999;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
-#container-name {
-    width: 100%;
+@media screen and (max-width:992px) {
+    .nav-item {
+        margin-left: 5vw;
+    }
 }
 
-#name {
-    font-size: 50px;
-    margin: 5%;
-    text-transform: uppercase;
+@media screen and (max-width:520px) {
+    .navbar-toggler {
+        margin-left: 5vw;
+    }
+
+    #icons {
+        margin-left: 5vw;
+    }
 }
 
 /* About Me */
@@ -539,7 +429,6 @@ h2 {
     transition: background-color 0.6s ease;
 }
 
-.active,
 .dot:hover {
     background-color: #717171;
 }
