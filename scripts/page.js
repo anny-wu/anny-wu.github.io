@@ -3,11 +3,12 @@ let slideIndex = 1;
 $(document).ready(function () {
   scrollHandle();
   backTop();
+  
   showSlides(slideIndex);
 
   $("#prev").click(plusSlides(-1));
   $("#next").click(plusSlides(1));
-
+  $("#icon").click(navBar);
 });
 
 //Set active tab when scrolling through the web
@@ -23,26 +24,26 @@ function scrollHandle(){
             $("#r").removeClass("active");
             $("#p").removeClass("active");
             $("#g").removeClass("active");
-            $("#top").css("display", "none");
+            $("#backtop").css("display", "none");
         } else if (Scroll >= SectionTwoOffset && Scroll < SectionThreeOffset) {
             $("#r").addClass("active");
             $("#a").removeClass("active");
             $("#p").removeClass("active");
             $("#g").removeClass("active");
-            $("#top").css("display", "block");
+            $("#backtop").css("display", "block");
         } else if (Scroll >= SectionThreeOffset && Scroll < SectionFourOffset) {
             $("#p").addClass("active");
             $("#r").removeClass("active");
             $("#a").removeClass("active");
             $("#g").removeClass("active");
-            $("#top").css("display", "block");
+            $("#backtop").css("display", "block");
         }
         else {
             $("#g").addClass("active");
             $("#r").removeClass("active");
             $("#a").removeClass("active");
             $("#p").removeClass("active");
-            $("#top").css("display", "block");
+            $("#backtop").css("display", "block");
         }
 
       });
@@ -84,8 +85,29 @@ function showSlides(n) {
 
 //Navigate back to the top of the page
 function backTop() {
-  $("#top").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
+  $("#backtop").click(function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
   });
+}
+
+//Change navigation bar style according to the window size
+function navBar(){
+  /*var nav = $(".nav");
+  nav.each(function () {
+    if (!$(this).hasClass("icon")) {
+      console.log($(this));
+      if ($(this).hasClass(" responsive")) {
+        $(this).removeClass(" responsive");
+        console.log("True");
+      } else {
+        $(this).addClass(" responsive");
+      }
+  }
+  });*/
+    var x = document.getElementById("navB");
+    if (x.className === "nav") {
+      x.className += " responsive";
+    } else {
+      x.className = "nav";
+    }
 }

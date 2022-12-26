@@ -11,12 +11,23 @@
     
     <!-- JS -->
     <script src='scripts/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src='scripts/page.js'></script>
     
     
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -25,7 +36,7 @@
     <div>
         <img id="logo" src="src/Logo.png" alt="initials logo">
     </div>
-    <div>
+    <div id="container-name">
         <p id="name"> Yu (Anny) Wu</p>
     </div>
     <div id="right">
@@ -34,13 +45,14 @@
             <a href="https://github.com/anny-wu"><img class="social" src="src/github.png" alt="jump to Github"></a>
             <a href=https://www.youtube.com/channel/UC6lyqzmD_FhERrMLSFAZMxg/videos><img class="social" src="src/youtube.png" alt="jump to Youtube"></a>
         </div>
-        <div>
-        <ul class="nav">
-            <li><a id="a" class="active" href="#about">About Me</a></li>
-            <li><a  id="r" class="nav" href="#resume">Resume</a></li>
-            <li><a id="p" class="nav" href="#projects">Projects</a></li>
-            <li><a id="g" class="nav" href="#slideshow">Photography</a></li>
-        </ul>
+        <div class="nav"id="navB">
+          <a id="a" class="active" href="#about">About Me</a>
+          <a  id="r" href="#resume">Resume</a>
+          <a id="p" href="#projects">Projects</a>
+          <a id="g" href="#slideshow">Photography</a>
+        <a href="javascript:void(0);" class="icon" id="icon">
+            <i class="fa fa-bars"></i>
+        </a>
         </div>
     </div>
 </div>
@@ -376,31 +388,31 @@
         <div class="slideshow-container">
 
             <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
+            <div class="mySlides faded">
                 <div class="numbertext">1 / 5</div>
                 <img src="src/1.JPG" alt="geese walking along Lake Michigan">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides faded">
                 <div class="numbertext">2 / 5</div>
                 <img src="src/2.jpg" alt="Seattle skyline">
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides faded">
                 <div class="numbertext">3 / 5</div>
                 <div id="containerI">
                 <img src="src/3.JPG" alt="Chicago skyline from Navy Pier">
                 </div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides faded">
                 <div class="numbertext">4 / 5</div>
                 <div id="containerI">
                     <img src="src/4.JPG" alt="Chicago Union Station">
                 </div>
             </div>
 
-            <div class="mySlides fade">
+            <div class="mySlides faded">
                 <div class="numbertext">5 / 5</div>
                 <div id="containerI">
                     <img src="src/5.jpg" alt="sunset on the Pacific Ocean">
@@ -432,7 +444,7 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="box">
                 <input type="hidden" name="_subject" value="Contact Submission">
-                <input type="text" name="_honey" style="display:none">
+                <input type="text" title="honey" name="_honey" style="display:none">
                 <div class="fields">
                     <div class="field name">
                         <input type="text" title="Name" name="Name" placeholder="Name" required />
@@ -454,8 +466,9 @@
         </div>
     </div>
 </section>
+
 <div id="circleC">
-    <img id="top" src="src/Top.png" alt="Click here to go back to the top of the page">
+    <img id="backtop" src="src/Top.png" alt="Click here to go back to the top of the page">
 </div>
 <footer>
     <p>Created by Yu(Anny)Wu<br>
