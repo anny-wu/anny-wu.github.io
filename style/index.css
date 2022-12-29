@@ -1,9 +1,6 @@
-[id] {
-    scroll-margin-top: 150px;
-}
-
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
 }
 
 h1 {
@@ -15,6 +12,10 @@ h1 {
 
 h2 {
     margin-bottom: 5px;
+}
+
+.btext {
+    font-size: 2vw;
 }
 
 /* Website Header */
@@ -78,9 +79,7 @@ h2 {
     min-width: 300px;
 }
 
-#textA {
-    font-size: 2vw;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.textA {
     line-height: 1.5cm;
 }
 
@@ -102,7 +101,6 @@ h2 {
 }
 
 .textR {
-    font-size: 2vw;
     line-height: 1.5cm;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -126,7 +124,6 @@ h2 {
 }
 
 .courses li {
-    font-size: 2vw;
     margin-left: 15%;
     margin-right: 5%;
 }
@@ -190,7 +187,6 @@ progress[value]::-moz-progress-bar {
 
 }
 
-
 .progress-bar {
     background-color: whiteSmoke;
     border-radius: 10px;
@@ -208,8 +204,6 @@ progress[value]::-moz-progress-bar {
     display: block;
     text-indent: -9999px;
 }
-
-
 
 p[data-value]:after {
     content: attr(data-value) '%';
@@ -233,10 +227,6 @@ p[data-value]:after {
         -moz-linear-gradient(left, rgb(18, 35, 192), rgb(116, 227, 224));
 }
 
-.skillT {
-    font-size: 2vw;
-}
-
 .progress-bar span {
     font-size: 2vw;
 }
@@ -253,6 +243,69 @@ p[data-value]:after {
 
 /* Projects Section */
 .pCard {
+    padding: 3vw;
+    background-color: lightskyblue;
+    border: 10px double rgb(14, 71, 150);
+}
+
+.title {
+    font-size: 3vw;
+    text-align: center;
+    margin: 2vh;
+}
+
+.textP {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 3vw;
+}
+
+#pDes {
+    background-color: white;
+    border-radius: 10vw;
+    width: 65%;
+    padding: 2vw;
+}
+
+#pdf,
+#video,
+#construct {
+    margin: auto !important;
+}
+
+.pcontent {
+    height: 35vw;
+    width: 30vw;
+}
+
+.vcontent {
+    height: auto !important;
+    width: 100% !important;
+}
+
+#construct {
+    width: 32vw;
+    height: 35vw;
+}
+
+/*
+#pDes1 {
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.textP {
+    font-size: 25px;
+    margin-top: 5px;
+    width: 80%;
+    margin: auto;
+}
+
+/*
+.pCard {
     z-index: -1;
     margin-bottom: 1%;
     background-color: lightskyblue;
@@ -263,10 +316,6 @@ p[data-value]:after {
     width: 100%;
 }
 
-.title {
-    font-size: 50px;
-    margin-left: 5%;
-}
 
 #pDes1 {
     display: flex;
@@ -275,7 +324,6 @@ p[data-value]:after {
     margin-left: 5%;
     margin-top: 5%;
     margin-bottom: 5%;
-    width: 100%;
     background-color: white;
     border-radius: 50px;
     margin-right: 5%;
@@ -290,10 +338,6 @@ p[data-value]:after {
 }
 
 
-#pdf {
-    padding-right: 5%;
-}
-
 #vid {
     width: 400px;
     height: 400px;
@@ -304,10 +348,9 @@ p[data-value]:after {
     right: 5%;
     height: 400px;
 }
-
+*/
 
 /* Gallery Section */
-
 #gallery {
     width: 100%;
     background-color: lightsalmon;
@@ -316,19 +359,32 @@ p[data-value]:after {
     z-index: 0;
 }
 
+#gallery img {
+    width: 100%;
+    object-fit: cover;
+    padding: 3vw;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: black !important;
+    width: 4vw !important;
+    height: 4vw !important;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*
 .slideshow-container {
     max-width: 70%;
     position: relative;
     margin: auto;
 }
 
-#gallery img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-    justify-items: space-around;
-    padding-top: 100px;
-}
 
 .mySlides {
     display: none;
@@ -513,23 +569,42 @@ footer a {
     width: 60px;
 }
 
+@media screen and (max-width:1200px) {
+    #pDes {
+        width: 95%;
+        margin: auto;
+    }
+
+    #pdf,
+    #video,
+    #construct {
+        padding-top: 3vw;
+    }
+
+    .pcontent {
+        height: 380px;
+        width: 1000px;
+    }
+
+    #construct {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
 @media screen and (min-width:992px) and (max-width:1400px) {
 
     #resume h2 {
         font-size: 35px !important;
     }
 
-    .textR {
-        font-size: 25px;
-    }
-
-    .courses li {
+    .btext {
         font-size: 25px;
     }
 }
 
 @media screen and (min-width:992px) {
-    #textA {
+    .textA {
         padding-left: 5vw !important;
     }
 }
@@ -551,9 +626,8 @@ footer a {
         padding: 4vw;
     }
 
-    #textA {
+    .textA {
         padding-top: 5vh !important;
-        font-size: 3vw;
     }
 
     .nav-item {
@@ -567,19 +641,15 @@ footer a {
         font-size: 4vw !important;
     }
 
-    .textR {
+    .btext {
         font-size: 3vw;
     }
 
-    .skillT {
-        font-size: 3vw;
+    .title {
+        font-size: 4vw;
     }
 
     .progress-bar span {
-        font-size: 3vw;
-    }
-
-    .courses li {
         font-size: 3vw;
     }
 }
@@ -602,11 +672,15 @@ footer a {
         font-size: 2vw !important;
     }
 
-    #textA {
+    .title {
+        font-size: 5vw;
+    }
+
+    .btext {
         font-size: 4vw;
     }
 
-    .textR {
+    .textA {
         font-size: 4vw;
     }
 
@@ -616,10 +690,6 @@ footer a {
 
     .progress-bar span {
         font-size: 3.5vw;
-    }
-
-    .courses li {
-        font-size: 4vw;
     }
 }
 

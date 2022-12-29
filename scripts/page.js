@@ -3,12 +3,6 @@ let slideIndex = 1;
 $(document).ready(function () {
   scrollHandle();
   backTop();
-  
-  showSlides(slideIndex);
-
-  $("#prev").click(plusSlides(-1));
-  $("#next").click(plusSlides(1));
-
   $(".nav-link").click(function () {
     $("#navbarToggler").collapse("hide");
   });
@@ -23,6 +17,12 @@ function scrollHandle(){
           SectionThreeOffset = $("#projects").offset().top - 320; 
           SectionFourOffset = $("#slideshow").offset().top - 320; 
         if (Scroll < SectionTwoOffset) {
+          $("#backtop").css("display", "none");
+        }
+        else {
+          $("#backtop").css("display", "block");
+        }
+        /*if (Scroll < SectionTwoOffset) {
             $("#a").addClass("active");
             $("#r").removeClass("active");
             $("#p").removeClass("active");
@@ -47,11 +47,11 @@ function scrollHandle(){
             $("#a").removeClass("active");
             $("#p").removeClass("active");
             $("#backtop").css("display", "block");
-        }
+        }*/
 
       });
 }
-
+/*
 //Show next or previous slide
 function plusSlides(n) {
   showSlides((slideIndex += n));
@@ -85,6 +85,7 @@ function showSlides(n) {
   $(slides[slideIndex - 1]).css("display", "block");
   $(dots[slideIndex - 1]).addClass(" active");
 }
+*/
 
 //Navigate back to the top of the page
 function backTop() {
