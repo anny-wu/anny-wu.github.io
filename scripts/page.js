@@ -8,6 +8,10 @@ $(document).ready(function () {
 
   $("#prev").click(plusSlides(-1));
   $("#next").click(plusSlides(1));
+
+  $(".nav-link").click(function () {
+    $("#navbarToggler").collapse("hide");
+  });
 });
 
 //Set active tab when scrolling through the web

@@ -7,10 +7,14 @@ body h1 h2 p {
 }
 
 h1 {
-    font-size: 2vw;
+    font-size: 3vw !important;
     text-align: center;
     text-transform: uppercase;
-    margin: 2vh !important;
+    margin: 4vh !important;
+}
+
+h2 {
+    margin-bottom: 5px;
 }
 
 /* Website Header */
@@ -20,11 +24,11 @@ h1 {
 }
 
 .navbar-brand {
-    font-size: 2rem !important;
+    font-size: 2vw !important;
 }
 
 .nav-link {
-    font-size: 1.5rem !important;
+    font-size: 2vw !important;
 }
 
 .nav-item .active {
@@ -51,28 +55,12 @@ h1 {
     margin-right: 20px;
 }
 
-@media screen and (max-width:992px) {
-    .nav-item {
-        margin-left: 5vw;
-    }
-}
-
-@media screen and (max-width:520px) {
-    .navbar-toggler {
-        margin-left: 5vw;
-    }
-
-    #icons {
-        margin-left: 5vw;
-    }
-}
-
 /* About Me */
 #container {
     background-color: lightskyblue;
     height: auto;
     border: 10px double rgb(14, 71, 150);
-    padding: 40px;
+    padding: 3vw;
 }
 
 .circle {
@@ -91,23 +79,10 @@ h1 {
 }
 
 #textA {
-    font-size: 25px;
+    font-size: 2vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5cm;
 }
-
-@media screen and (min-width:992px) {
-    #textA {
-        padding-left: 5vw !important;
-    }
-}
-
-@media screen and (max-width:992px) {
-    #textA {
-        padding-top: 5vh !important;
-    }
-}
-
 
 /* Resume Section */
 .sectionC {
@@ -123,28 +98,18 @@ h1 {
 }
 
 #resume h2 {
-    margin-left: 20px;
-    font-size: 2em;
+    font-size: 45px !important;
 }
 
 .textR {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 25px;
+    font-size: 2vw;
     line-height: 1.5cm;
     margin-bottom: 0%;
     margin-top: 0%;
 }
 
 .titleR {
-    display: flex;
-    justify-content: space-between;
     margin: 0;
-}
-
-.titleRP {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 2%;
     margin-top: 5%;
 }
@@ -161,7 +126,7 @@ h1 {
 }
 
 .courses li {
-    font-size: 25px;
+    font-size: 2vw;
     margin-left: 15%;
     margin-right: 5%;
 }
@@ -171,7 +136,15 @@ h1 {
 }
 
 .exp {
-    margin-bottom: 1%;
+    margin-bottom: 8%;
+}
+
+.skills ul {
+    padding: 10px;
+    columns: 2;
+    column-gap: 0px;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 /* Progress Bar */
@@ -245,12 +218,7 @@ p[data-value]:after {
 }
 
 .skill::-webkit-progress-value {
-    background-image: -webkit-linear-gradient(135deg,
-            transparent,
-            transparent 33%,
-            rgba(0, 0, 0, .1) 33%,
-            rgba(0, 0, 0, .1) 66%,
-            transparent 66%),
+    background-image:
         -webkit-linear-gradient(top,
             rgba(255, 255, 255, .25),
             rgba(0, 0, 0, .2)),
@@ -258,12 +226,7 @@ p[data-value]:after {
 }
 
 .skill::-moz-progress-bar {
-    background-image: -moz-linear-gradient(135deg,
-            transparent,
-            transparent 33%,
-            rgba(0, 0, 0, .1) 33%,
-            rgba(0, 0, 0, .1) 66%,
-            transparent 66%),
+    background-image:
         -moz-linear-gradient(top,
             rgba(255, 255, 255, .25),
             rgba(0, 0, 0, .2)),
@@ -274,17 +237,11 @@ p[data-value]:after {
     font-size: 25px;
 }
 
-.skills {
-    height: 600px;
-}
-
-.skills ul {
-    padding: 10px;
+#skills {
+    height: auto;
 }
 
 .skills li {
-    width: 40%;
-    float: left;
     list-style-type: none;
     margin-left: 5%;
     margin-right: 5%;
@@ -320,10 +277,6 @@ p[data-value]:after {
     background-color: white;
     border-radius: 50px;
     margin-right: 5%;
-}
-
-h2 {
-    margin-bottom: 5px;
 }
 
 .textP {
@@ -556,4 +509,110 @@ footer a {
     z-index: 99;
     cursor: pointer;
     width: 60px;
+}
+
+@media screen and (min-width:992px) and (max-width:1400px) {
+    .textR {
+        font-size: 25px;
+    }
+
+    .courses li {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    #textA {
+        padding-left: 5vw !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    h1 {
+        font-size: 4vw !important;
+    }
+
+    .navbar-brand {
+        font-size: 3vw !important;
+    }
+
+    .nav-link {
+        font-size: 3vw !important;
+    }
+
+    #container {
+        padding: 4vw;
+    }
+
+    #textA {
+        padding-top: 5vh !important;
+        font-size: 3vw;
+    }
+
+    .nav-item {
+        margin-left: 5vw;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    .textR {
+        font-size: 3vw;
+    }
+
+    .courses li {
+        font-size: 3vw;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 5vw !important;
+    }
+
+    .navbar-brand {
+        font-size: 4vw !important;
+    }
+
+    .nav-link {
+        font-size: 2vw !important;
+    }
+
+    .textR {
+        font-size: 4vw;
+    }
+
+    #textA {
+        font-size: 4vw;
+    }
+
+    .courses li {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:668px) {
+    .courses ul {
+        columns: 1;
+        column-gap: 0px;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+
+    .skills ul {
+        columns: 1;
+        column-gap: 0px;
+        -webkit-columns: 1;
+        -moz-columns: 1;
+    }
+}
+
+@media screen and (max-width:520px) {
+    .navbar-toggler {
+        margin-left: 5vw;
+    }
+
+    #icons {
+        margin-left: 5vw;
+    }
 }
