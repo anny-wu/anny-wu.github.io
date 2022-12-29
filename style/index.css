@@ -2,7 +2,7 @@
     scroll-margin-top: 150px;
 }
 
-body h1 h2 p {
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -66,8 +66,8 @@ h2 {
 .circle {
     width: 23vw;
     height: 23vw;
-    min-width: 300px;
-    min-height: 300px;
+    min-width: 280px;
+    min-height: 280px;
     overflow: hidden;
     border-radius: 50%;
     margin: auto !important;
@@ -98,7 +98,7 @@ h2 {
 }
 
 #resume h2 {
-    font-size: 45px !important;
+    font-size: 3vw !important;
 }
 
 .textR {
@@ -234,7 +234,11 @@ p[data-value]:after {
 }
 
 .skillT {
-    font-size: 25px;
+    font-size: 2vw;
+}
+
+.progress-bar span {
+    font-size: 2vw;
 }
 
 #skills {
@@ -246,8 +250,6 @@ p[data-value]:after {
     margin-left: 5%;
     margin-right: 5%;
 }
-
-
 
 /* Projects Section */
 .pCard {
@@ -512,6 +514,11 @@ footer a {
 }
 
 @media screen and (min-width:992px) and (max-width:1400px) {
+
+    #resume h2 {
+        font-size: 35px !important;
+    }
+
     .textR {
         font-size: 25px;
     }
@@ -555,7 +562,20 @@ footer a {
 }
 
 @media screen and (min-width:768px) and (max-width:992px) {
+
+    #resume h2 {
+        font-size: 4vw !important;
+    }
+
     .textR {
+        font-size: 3vw;
+    }
+
+    .skillT {
+        font-size: 3vw;
+    }
+
+    .progress-bar span {
         font-size: 3vw;
     }
 
@@ -570,6 +590,10 @@ footer a {
         font-size: 5vw !important;
     }
 
+    #resume h2 {
+        font-size: 5vw !important;
+    }
+
     .navbar-brand {
         font-size: 4vw !important;
     }
@@ -578,12 +602,20 @@ footer a {
         font-size: 2vw !important;
     }
 
+    #textA {
+        font-size: 4vw;
+    }
+
     .textR {
         font-size: 4vw;
     }
 
-    #textA {
-        font-size: 4vw;
+    .skillT {
+        font-size: 3.5vw;
+    }
+
+    .progress-bar span {
+        font-size: 3.5vw;
     }
 
     .courses li {
