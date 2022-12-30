@@ -14,6 +14,13 @@ h2 {
     margin-bottom: 5px;
 }
 
+#download {
+    font-size: 1.5vw !important;
+    text-align: center;
+    margin-left:1.5vw;
+}
+
+
 .btext {
     font-size: 2vw;
 }
@@ -80,7 +87,7 @@ h2 {
 }
 
 .textA {
-    line-height: 1.5cm;
+    line-height: 10vh;
 }
 
 /* Resume Section */
@@ -101,7 +108,7 @@ h2 {
 }
 
 .textR {
-    line-height: 1.5cm;
+    line-height: 10vh;
     margin-bottom: 0%;
     margin-top: 0%;
 }
@@ -270,13 +277,13 @@ p[data-value]:after {
 #pdf,
 #video,
 #construct,
-#img{
+#img {
     margin: auto !important;
 }
 
 #img {
     width: 27vw;
-    max-width:27vw;
+    max-width: 27vw;
 }
 
 .pcontent {
@@ -410,12 +417,13 @@ footer a {
         width: 1000px;
     }
 
-    #construct, #img{
+    #construct,
+    #img {
         width: 100%;
         height: 50vh;
     }
 
-    #img{
+    #img {
         max-width: 1000px;
     }
 }
@@ -440,6 +448,10 @@ footer a {
 @media screen and (max-width:992px) {
     h1 {
         font-size: 4vw !important;
+    }
+
+    #download {
+        font-size: 2.5vw !important;
     }
 
     .navbar-brand {
@@ -487,6 +499,11 @@ footer a {
     h1 {
         font-size: 5vw !important;
     }
+
+    #download {
+        font-size: 3.5vw !important;
+    }
+
 
     #resume h2 {
         font-size: 5vw !important;
@@ -550,5 +567,9 @@ footer a {
     .carousel-control-next-icon {
         width: 30px !important;
         height: 30px !important;
+    }
+
+    .textR,.textA{
+        line-height:5vh;
     }
 }
