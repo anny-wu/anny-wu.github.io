@@ -269,8 +269,13 @@ p[data-value]:after {
 
 #pdf,
 #video,
-#construct {
+#construct,
+#img{
     margin: auto !important;
+}
+
+#img {
+    width: 27vw;
 }
 
 .pcontent {
@@ -394,7 +399,8 @@ footer a {
 
     #pdf,
     #video,
-    #construct {
+    #construct,
+    #img {
         padding-top: 3vw;
     }
 
@@ -404,6 +410,11 @@ footer a {
     }
 
     #construct {
+        width: 100%;
+        height: 50vh;
+    }
+
+    #img {
         width: 100%;
         height: 50vh;
     }
