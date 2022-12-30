@@ -305,8 +305,8 @@ p[data-value]:after {
     margin: auto;
 }
 
-.carousel-dark .carousel-indicators [data-bs-target]{
-   background-color: white !important;
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: white !important;
 }
 
 .carousel-control-prev-icon,
@@ -331,76 +331,35 @@ p[data-value]:after {
 #contactC {
     margin-bottom: 1%;
     background-color: lightskyblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     border: 10px double rgb(14, 71, 150);
-    width: 100%;
 }
 
-.fields {
-    display: flex;
+.name,
+.email {
     width: 100%;
-}
-
-.fields .field {
-    width: 80%;
+    margin-bottom: 15px !important;
 }
 
 .field {
+    margin: 0;
+    padding: 0;
     height: 45px;
-    width: 100%;
     margin-bottom: 15px;
 }
 
 .textarea {
     height: 100px;
-    width: 100%;
-}
-
-.textarea textarea {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.name {
-    margin-right: 40px;
-}
-
-.email {
-    margin-left: 40px;
 }
 
 .field input,
 .textarea textarea {
-    height: 100%;
     width: 100%;
+    height: 100%;
     border: 3px solid rgb(18, 35, 192);
     border-radius: 10px;
     outline: none;
-    padding: 0 15px;
+    padding: 0 10px;
     font-size: 17px;
-}
-
-
-form button {
-    height: 100%;
-    background-color: rgb(18, 35, 192);
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    margin: auto;
-}
-
-form button:hover {
-    background-color: darkcyan;
-    color: white;
-}
-
-#submit {
-    display: flex;
-    align-items: center;
 }
 
 /* Footer Section */
@@ -409,7 +368,7 @@ footer {
     padding: 3px;
     font-size: 20px;
     width: 100%;
-    border: 3px solid rgb(18, 35, 192);
+    border-top: 2px solid rgb(18, 35, 192);
     background-color: rgb(254, 236, 229);
 }
 
@@ -423,7 +382,8 @@ footer a {
     right: 30px;
     z-index: 99;
     cursor: pointer;
-    width: 60px;
+    font-size: 6vh;
+    color: white
 }
 
 @media screen and (max-width:1200px) {
