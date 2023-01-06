@@ -1,6 +1,9 @@
+[id] {
+    scroll-margin-top: 15vh;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    position: relative;
 }
 
 h1 {
@@ -14,10 +17,18 @@ h2 {
     margin-bottom: 5px;
 }
 
+a {
+    color: black;
+}
+
+#content {
+    position: relative;
+}
+
 #download {
     font-size: 1.5vw !important;
     text-align: center;
-    margin-left:1.5vw;
+    margin-left: 1.5vw;
 }
 
 
@@ -253,6 +264,7 @@ p[data-value]:after {
     padding: 3vw;
     background-color: lightskyblue;
     border: 10px double rgb(14, 71, 150);
+    margin-bottom: 1%;
 }
 
 .title {
@@ -569,7 +581,8 @@ footer a {
         height: 30px !important;
     }
 
-    .textR,.textA{
-        line-height:5vh;
+    .textR,
+    .textA {
+        line-height: 5vh;
     }
 }

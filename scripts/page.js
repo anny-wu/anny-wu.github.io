@@ -6,86 +6,41 @@ $(document).ready(function () {
   $(".nav-link").click(function () {
     $("#navbarToggler").collapse("hide");
   });
+  $(".nav-link").on("click", function () {
+    $(".navbar").find(".active").removeClass("active");
+    $(this).addClass("active");
+  });
 });
 
 //Set active tab when scrolling through the web
 function scrollHandle(){
     	$(window).scroll(function () {
-        var Scroll = $(window).scrollTop(), 
-          SectionOneOffset = $("#about").offset().top - 320,
-          SectionTwoOffset = $("#resume").offset().top - 320,
-          SectionThreeOffset = $("#projects").offset().top - 320; 
-          SectionFourOffset = $("#slideshow").offset().top - 320; 
+        var Scroll = $(window).scrollTop(),
+          SectionOneOffset = $("#about").offset().top,
+          SectionTwoOffset = $("#resume").offset().top,
+          SectionThreeOffset = $("#projects").offset().top;
+        SectionFourOffset = $("#slideshow").offset().top;
         if (Scroll < SectionTwoOffset) {
           $("#backtop").css("display", "none");
-        }
-        else {
+        } else {
           $("#backtop").css("display", "block");
         }
-        /*if (Scroll < SectionTwoOffset) {
-            $("#a").addClass("active");
-            $("#r").removeClass("active");
-            $("#p").removeClass("active");
-            $("#g").removeClass("active");
-            $("#backtop").css("display", "none");
+        if (Scroll < SectionTwoOffset) {
+          $(".navbar").find(".active").removeClass("active");
+          $("#a").addClass("active");
         } else if (Scroll >= SectionTwoOffset && Scroll < SectionThreeOffset) {
-            $("#r").addClass("active");
-            $("#a").removeClass("active");
-            $("#p").removeClass("active");
-            $("#g").removeClass("active");
-            $("#backtop").css("display", "block");
+          $(".navbar").find(".active").removeClass("active");
+          $("#r").addClass("active");
         } else if (Scroll >= SectionThreeOffset && Scroll < SectionFourOffset) {
-            $("#p").addClass("active");
-            $("#r").removeClass("active");
-            $("#a").removeClass("active");
-            $("#g").removeClass("active");
-            $("#backtop").css("display", "block");
+          $(".navbar").find(".active").removeClass("active");
+          $("#p").addClass("active");
         }
         else {
+            $(".navbar").find(".active").removeClass("active");
             $("#g").addClass("active");
-            $("#r").removeClass("active");
-            $("#a").removeClass("active");
-            $("#p").removeClass("active");
-            $("#backtop").css("display", "block");
-        }*/
-
+        }
       });
 }
-/*
-//Show next or previous slide
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-//Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-//Navigate to slide
-function showSlides(n) {
-  let slides = $(".mySlides");
-  let dots = $(".dot");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  
-  $(slides).each(function () {
-    $(this).css("display", "none");
-  });
-  
-  $(dots).each(function () {
-    $(this).removeClass("active");
-  });
-
-  $(slides[slideIndex - 1]).css("display", "block");
-  $(dots[slideIndex - 1]).addClass(" active");
-}
-*/
 
 //Navigate back to the top of the page
 function backTop() {
