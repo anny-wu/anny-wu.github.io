@@ -12,14 +12,22 @@ $(document).ready(function () {
   });
 });
 
+function vh(percent) {
+  var h = Math.max(
+    document.documentElement.clientHeight,
+    window.innerHeight || 0
+  );
+  return (percent * h) / 100;
+}
+
 //Set active tab when scrolling through the web
 function scrollHandle(){
     	$(window).scroll(function () {
         var Scroll = $(window).scrollTop(),
-          SectionOneOffset = $("#about").offset().top,
-          SectionTwoOffset = $("#resume").offset().top,
-          SectionThreeOffset = $("#projects").offset().top;
-        SectionFourOffset = $("#slideshow").offset().top;
+          SectionOneOffset = $("#about").offset().top - vh(20),
+          SectionTwoOffset = $("#resume").offset().top - vh(20),
+          SectionThreeOffset = $("#projects").offset().top - vh(20);
+        SectionFourOffset = $("#slideshow").offset().top - vh(20);
         if (Scroll < SectionTwoOffset) {
           $("#backtop").css("display", "none");
         } else {
