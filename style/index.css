@@ -67,12 +67,27 @@ a {
     display: inline-block;
 }
 
+.toggle {
+    margin-right: 20px;
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+    border-radius: 20px;
+}
+
+.toggle.ios .toggle-handle {
+    border-radius: 100px;
+}
+
 .social {
     height: 30px;
     width: 30px;
     z-index: 999;
     margin-right: 20px;
 }
+
 
 /* About Me */
 #container {
@@ -291,6 +306,10 @@ p[data-value]:after {
 #construct,
 #img {
     margin: auto !important;
+}
+
+#projectd{
+    text-align: center;
 }
 
 #img {

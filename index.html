@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +15,7 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
         crossorigin="anonymous"></script>
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
     <script src='scripts/page.js'></script>
     
     <!-- CSS -->
@@ -22,6 +23,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +31,9 @@
 <nav id="navbar" class="navbar sticky-top navbar-expand-lg">
     <a class="navbar-brand order-0 flex-grow-1" href="#">
         <img src="src/Logo.png"  width="50" height="50" id="logo" alt="initials logo">
-        Yu (Anny) Wu </a>
+        <span lang="en">Yu (Anny) Wu</span>
+        <span lang="zh">吴瑜(Anny)</span>
+    </a>
     <button class="navbar-toggler order-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,16 +41,28 @@
     <div class="collapse navbar-collapse order-lg-2 order-4" id="navbarToggler" data-bs-target=".navbar-collapse.show">
         <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item">
-                <a id="a" class="nav-link active" href="#about" >About Me</a>
+                <a id="a" class="nav-link active" href="#about" >
+                    <span lang="en">About Me</span>
+                    <span lang="zh">简介</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a id="r" class="nav-link" href="#resume">Resume</a>            
+                <a id="r" class="nav-link" href="#resume">
+                    <span lang="en">Resume</span>
+                    <span lang="zh">简历</span>
+                </a>            
             </li>
             <li class="nav-item">
-                <a id="p" class="nav-link" href="#projects">Projects</a>
+                <a id="p" class="nav-link" href="#projects">
+                    <span lang="en">Projects</span>
+                    <span lang="zh">项目经历</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a id="g" class="nav-link" href="#slideshow">Photography</a>
+                <a id="g" class="nav-link" href="#slideshow">
+                    <span lang="en">Photography</span>
+                    <span lang="zh">摄影作品</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -55,13 +71,17 @@
         <a href="https://github.com/anny-wu"><img class="social" src="src/github.png" alt="jump to Github"></a>
         <a href=https://www.youtube.com/channel/UC6lyqzmD_FhERrMLSFAZMxg/videos><img class="social" src="src/youtube.png"
                 alt="jump to Youtube"></a>
+        <input id="langSwitch" type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="EN" data-off="中文" data-onstyle="primary" data-offstyle="danger">
     </div> 
 </nav>
 
 <!-- About -->
 <section>
     <div id="about">
-        <h1 id="me">About Me</h1>
+        <h1 id="me">
+            <span lang="en">About Me</span>
+            <span lang="zh">简介</span>
+        </h1>
         <div id="container" class="w-100">
             <div class="row">
                 <div id="pic" class="col-lg-4 col-xs-12 d-flex justify-content-center flex-column">
@@ -81,7 +101,12 @@
 <!-- Resume -->
 <section>
     <div id="resume">
-        <h1>Resume<a id="download" href="src/resume/YU_WU.pdf" download>(download)</a></h1>
+        <h1>
+            <span lang="en">Resume</span>
+            <span lang="zh">简历</span>
+            <a id="download" href="src/resume/YU_WU.pdf" download>
+                <span lang="en">(download)</span>
+                <span lang="zh">(下载链接)</span></a></h1>
 
         <div class="sectionC w-100">
             <div id="education" class="content">
@@ -164,7 +189,7 @@
                         problem statement,
                         gathering
                         user interviews, designing end users personas, and producing wireframe images
-                        <a href="https://www.icloud.com/iclouddrive/08eUrQajHpsSVu2rKsT4Jqokg#Swipe"> (link to
+                        <a href="https://www.icloud.com/iclouddrive/0dbCmPHDNJ6zFsOUlKu2wMw6g#Swipe"> (link to
                             pitch deck)</a>
                     </p>
                 </div>
@@ -361,7 +386,10 @@
 <!-- Projects-->
 <section>
     <div id="projects">
-        <h1>Projects</h1>
+        <h1>
+            <span lang="en">Projects</span>
+            <span lang="zh">项目经历</span>
+        </h1>
         
         <div class="pCard" id="card1">
             <div class="row">
@@ -370,9 +398,12 @@
                     Boosting, Neural Network) and unsupervised (K-means clustering) models using scikit learn, pandas, and numpy libraries. The best models
                     achieved over 90% accuracy in predicting a patient’s diagnosis based on a list of symptoms. </p>
                 </div>
-                <div id="pdf" class="flexible-container-embed col-xl-3 col-xs-12 d-flex justify-content-center">
-                    <iframe class="pcontent" src="https://drive.google.com/file/d/1Q-NL5HzsW5xYQ3CPbfQswvGpuSUTqQdR/preview"allow="autoplay"></iframe>
-                    <a href="https://www.icloud.com/iclouddrive/03fptnXTBVrwbPFnLvTWKuzMg#Disease_Classification_Project"> (Download)</a>
+                <div class="col-xl-3 col-xs-12 d-flex">
+                    <div id="pdf" class="flexible-container-embed d-flex-column justify-content-center">
+                        <iframe class="pcontent" src="https://drive.google.com/file/d/1Q-NL5HzsW5xYQ3CPbfQswvGpuSUTqQdR/preview"allow="autoplay"></iframe>
+                        <a id="projectd" href="https://www.icloud.com/iclouddrive/054kghrAU_nItf8EfPED28JrA#Disease_Classification_Project">
+                            (Download)</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -464,7 +495,10 @@
 <!-- Slideshow container -->
 <section>
     <div id="slideshow">
-    <h1>Photography</h1>
+    <h1>
+        <span lang="en">Photography</span>
+        <span lang="zh">摄影作品</span>
+    </h1>
     <div id="gallery">
     <div id="carousel" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -480,7 +514,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block" src="src/1.JPG" alt="geese walking along Lake Michigan">
+                <img class="d-block" src="src/1.JPG" alt="Geese walking along Lake Michigan">
             </div>
             <div class="carousel-item">
                 <img class="d-block" src="src/2.jpg" alt="Seattle skyline">

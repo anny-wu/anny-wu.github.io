@@ -1,6 +1,7 @@
 let slideIndex = 1;
 
 $(document).ready(function () {
+  languageSwitch();
   scrollHandle();
   backTop();
   $(".nav-link").click(function () {
@@ -11,6 +12,20 @@ $(document).ready(function () {
     $(this).addClass("active");
   });
 });
+
+function languageSwitch() {
+    $("[lang]").hide();
+    $('[lang="en"]').show();
+  $("#langSwitch").change(function () {
+      if ($(this).prop("checked")) {
+        $("[lang]").hide();
+        $('[lang="en"]').show();
+      } else {
+        $("[lang]").hide();
+        $('[lang="zh"]').show();
+      }
+    });
+}
 
 function vh(percent) {
   var h = Math.max(
