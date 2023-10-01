@@ -71,7 +71,7 @@
         <a href="https://github.com/anny-wu"><img class="social" src="src/github.png" alt="jump to Github"></a>
         <a href=https://www.youtube.com/channel/UC6lyqzmD_FhERrMLSFAZMxg/videos><img class="social" src="src/youtube.png"
                 alt="jump to Youtube"></a>
-        <input id="langSwitch" type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="EN" data-off="中文" data-onstyle="primary" data-offstyle="danger">
+        <!--<input id="langSwitch" type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="EN" data-off="中文" data-onstyle="primary" data-offstyle="danger">-->
     </div> 
 </nav>
 
@@ -90,8 +90,14 @@
                     </div>
                 </div>
                 <div class="textA btext col-lg-8 col-xs-12">
-                    <p id="description">I am a senior at the University of Michigan studying <strong>Computer Science</strong> at the College of Engineering, and I am on track to graduate with a Bachelor of Science in Engineering Degree (B.S.E.) in December 2023. I am passionate about <strong>software development</strong> and <strong>machine learning</strong> and have tackled on various projects in related topics. I love to pay special attention to numbers, and I once memorized 200 digits of pi for fun.
-                    </p>
+                    <span lang="en"><p id="description">I am a senior at the University of Michigan studying <strong>Computer Science</strong> at the
+                        College of Engineering, and I am on track to graduate with a Bachelor of Science in Engineering Degree (B.S.E.) in
+                        December 2023. I am passionate about <strong>software development</strong> and <strong>machine learning</strong> and
+                        have tackled on various projects in related topics. I love to pay special attention to numbers, and I once memorized
+                        200 digits of pi for fun.
+                    </p></span>
+                    <span lang="zh"><p id="description">我是密歇根大学的大四学生，在工程学院学习<strong>计算机科学</strong>，我有望于2023年12月毕业，获得工程理学学士学位（B.S.E.）。我对<strong>软件充满热情，在相关主题中处理了各种项目。我喜欢特别注意数字，我曾经为了好玩而记住了200位圆周率。
+                    </p></span>
                 </div>
             </div>
         </div>
@@ -116,7 +122,7 @@
                     <p class="textR btext text-end col-lg-4 col-xs-12"><strong>Aug 2021 - Dec 2023<br></strong></p>
                 </div>
                 <p class="textR btext">
-                    <strong>GPA:</strong> 3.905/4.00 <br>
+                    <strong>GPA:</strong> 3.857/4.00 <br>
                     <strong>Major:</strong> Computer Science B.S.E. <br>            
                     <strong>Relevant Coursework:<br></strong>
                 </p>
@@ -131,6 +137,7 @@
                         <li class="btext">Introduction to Artificial Intelligence</li>
                         <li class="btext">Introduction to Machine Learning</li>
                         <li class="btext">Introduction to Computer Security</li>
+                        <li class="btext">Introduction to Operation Systems</li>
                         <li class="btext">User Interface Development</li>
                         <li class="btext">Human-Centered Software Design and Development</li>
                         <li class="btext">Probability and Statistics for Engineers</li>
@@ -151,14 +158,20 @@
                 </div>
                 <div class="exp">
                     <div class="titleR row">
-                        <p class="textR btext col-xl-9 col-xs-12"> <em>Michigan Hackers - Machine Learning Team, Quant Team and iOS Team</em></p>
+                        <p class="textR btext col-xl-8 col-xs-12"> <em>EECS 492 (Introduction to AI) Instructional Aide</em></p>
+                        <p class="textR btext text-end col-xl-4 col-xs-12"><em>August 2023 - Present</em><br>
+                    </div>
+                    <p class="textR btext">--- Facilitated weekly discussion sections and offered dedicated office hours, significantly enhancing the learning
+                    experience for a cohort of 335 students enrolled in the course</p>
+                </div>
+                <div class="exp">
+                    <div class="titleR row">
+                        <p class="textR btext col-xl-9 col-xs-12"> <em>Michigan Hackers - iOS Team</em></p>
                         <p class="textR btext text-end col-xl-3 col-xs-12"><em>August 2021 - Present</em><br>
                     </div>
-                    <p class="textR btext">--- Experiment with different combinations of numbers for reward to apply concepts of
-                        reinforcement learning (Q-learning)
-                        to build a Minesweeper AI using Python that is capable of solving the minesweeper game alone</p>
-                    <p class="textR btext">--- Implemented the search user interface and its algorithim for an iOS app that serves the student body by helping them to
-                    navigate the classroom buildings and arrive at classes on time through a personalized path drawn on maps</p>
+                    <p class="textR btext">--- Developed and integrated the search user interface along with its A-Star search algorithm in an iOS app, catering to the
+                    needs of the student community by providing personalized navigation within classroom buildings to ensure punctual class
+                    attendance</p>
                 </div>
                 <div class="exp">
                     <div class="titleR row">
@@ -166,9 +179,8 @@
                         <p class="textR btext text-end col-xl-4 col-xs-12"><em>July 2022 - August 2022</em><br>
                     </div>
                     <p class="textR btext">
-                        --- Offered personalized assistance for over 1,500 participants involved in the National Training
-                        Institute by providing
-                        events assistance and directional support to meet the academic and entertainment needs</p>
+                        --- Provided personalized support to over 1,500 participants during the National Training Institute, offering event
+                        assistance and directional guidance to meet their academic coursework and recreational activity needs</p>
                 </div>
                 <div class="exp">
                     <div class="titleR row">
@@ -176,8 +188,8 @@
                         <p class="textR btext text-end col-xl-4 col-xs-12"><em>March 2022 - June 2022</em><br>
                     </div>
                     <p class="textR btext">
-                        --- Assisted in the data preparation for the natural language processing research here at the School of
-                        Information and identified the appropriate social contexts in which a sentence could be said </p>
+                        --- Contributed to data preparation for NLP research at the School of Information, involving the classification of sentences
+                        according to their relevant social contexts, thereby generating essential training labels for machine learning models </p>
                 </div>
                 <div class="exp">
                     <div class="titleR row">
@@ -187,8 +199,7 @@
                     <p class="textR btext">
                         --- Built a low-fi prototype for a project matching application in a 4-week competition by defining
                         problem statement,
-                        gathering
-                        user interviews, designing end users personas, and producing wireframe images
+                        gathering user interviews, designing end users personas, and producing wireframe images
                         <a href="https://www.icloud.com/iclouddrive/0dbCmPHDNJ6zFsOUlKu2wMw6g#Swipe"> (link to
                             pitch deck)</a>
                     </p>
